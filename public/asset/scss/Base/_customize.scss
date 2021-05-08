@@ -1,0 +1,137 @@
+// text-up
+.text-uppercase{
+  text-transform: uppercase;
+}
+.Navigation {
+  .Navigation__content {
+    .nav-item {
+      .nav-link {
+        color: $color-black-0 !important;
+        &:hover {
+          color: $color-brown-0 !important;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link.active {
+        color: $color-brown-0 !important;
+      }
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $color-brown-2;
+  border: 1px solid $color-brown-2;
+  padding: 10px 27px;
+  @include text-style($color-white-0, $spacing-3 - 2, $fw-normal);
+}
+
+ 
+button:focus{
+    outline: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid $color-brown-2;
+    
+}
+button:hover{
+    background-color: $color-brown-0;
+}
+::-webkit-scrollbar-track
+{
+	background-color: $color-white-2;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: $color-white-2;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: $color-brown-0;
+}
+
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+
+
+
+  .btn_loading{
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  }
+    .fa-spinner{
+      animation: spin 2s linear infinite;
+      
+    }
+  }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pagination_area {
+  float: right;
+  .pagination {
+      .page-item {
+              position: relative;
+              display: block;
+              padding: 0.5rem 0.75rem;
+              margin-left: -1px;
+              line-height: 1.25;
+              color: $color-brown-3;
+              background-color: $color-white-0;
+              border: 1px solid $color-brown-2;
+              border-radius: 0;
+              cursor: pointer;
+              &:hover{
+                  background-color: $color-brown-3;
+              color: $color-white-0;
+              }
+              &:focus{
+                  outline: none;
+                  box-shadow: none;
+                }
+          }
+          .page-item.active{
+              background-color: $color-brown-3;
+              color: $color-white-0;
+          }
+      
+  }
+}
+
+.feature_big_content{
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+}
+
+
+.disabled{
+  z-index: -1;
+  color: #dee2e6 !important;
+}
+
+.fs-20{
+  font-size: 20px;
+}

@@ -1,0 +1,102 @@
+.navbar-light {
+  .navbar-toggler {
+    border: none;
+    background-color: $color-white-0;
+    position: absolute;
+    top: -35px;
+    left: 10px;
+  }
+}
+
+.table th,
+.table td {
+  border-top: 1px solid $color-brown-2;
+  vertical-align: revert;
+  color: $color-brown-3;
+  text-align: center;
+}
+
+// filter price
+
+.input-range__slider {
+  background: $color-brown-3 !important;
+  border: 1px solid $color-brown-3 !important;
+}
+
+.input-range__track--active {
+  background: $color-brown-3 !important;
+}
+
+.input-range__label {
+  color: $color-brown-3 !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+#error {
+  color: $color-orange-0 !important;
+  padding: 0;
+  font-size: $fs-1;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+  top: 40%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: rgba(131, 130, 134, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slick-arrow.slick-next::before {
+  content: "\f105";
+  font-family: FontAweSome;
+  font-size: 40px;
+  opacity: unset;
+  position: absolute;
+  color: #fff;
+  top: 5px;
+  right: 15px;
+}
+
+.slick-arrow:focus {
+  border: none;
+}
+
+.slick-arrow.slick-prev {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: rgba(131, 130, 134, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+button.slick-arrow.slick-prev::before {
+  content: "\f104";
+  font-family: FontAweSome;
+  font-size: 40px;
+  opacity: unset;
+  position: absolute;
+  color: #fff;
+  top: 5px;
+  right: 20px;
+}

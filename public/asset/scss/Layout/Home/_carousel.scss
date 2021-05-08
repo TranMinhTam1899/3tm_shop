@@ -1,0 +1,70 @@
+.home_carousel_area {
+  margin-top: 15px;
+  max-height: 500px;
+  .slick-slider {
+    .slider_item {
+      .slider_item_images {
+        position: relative;
+        max-height: 500px;
+        .carousel_hover {
+          position: absolute;
+          bottom: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+          .btn_carou {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            &:hover{
+              background-color: #7c5743;
+              border: 2px solid #7c5743;
+            }
+          }
+        }
+      }
+    }
+    .slick-arrow.slick-prev {
+      left: 15px;
+      top: 50%;
+    }
+    .slick-arrow.slick-next {
+      right: 15px;
+      top: 50%;
+    }
+    .slick-dots {
+      bottom: 0;
+      li {
+        button {
+          background: #ffffff82;
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+          &::before {
+            display: none;
+          }
+        }
+        &.slick-active {
+          button {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .home_carousel_area {
+    .slick-slider {
+      .slider_item {
+        .slider_item_images {
+          .carousel_hover{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  
+}
