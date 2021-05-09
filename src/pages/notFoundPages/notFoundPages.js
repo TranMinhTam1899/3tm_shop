@@ -10,9 +10,9 @@ const NotFoundPages=()=> {
            <section className="solid_banner_area">
                 <Container>
                     <div className="solid_banner_inner">
-                        <h3>Not Found Pages</h3>
+                        <h3>Trang web không tìm thấy</h3>
                         <ul>
-                            <li><Link to="/">Home /</Link></li>
+                            <li><Link to="/">Trang chủ /</Link></li>
                             <li><Link to="/abc"> 404</Link></li>
                         </ul>
                     </div>
@@ -24,7 +24,7 @@ const NotFoundPages=()=> {
                     <div class="emty_cart_inner">
                         <i class="icon-handbag icons"></i>
                         <h3>404</h3>
-                        <h4>back to <Link to="/">Home</Link></h4>
+                        <h4> <Link to="/">Quay lại trang chủ</Link></h4>
                     </div>
                 </Container>
             </section>

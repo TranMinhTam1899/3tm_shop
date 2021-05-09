@@ -43,22 +43,22 @@ const Profile = (props) => {
                                         <span className="col-lg-10">{user.email}</span>
                                     </div>
                                     <div className="row">
-                                        <span className="col-lg-2">Sex:</span>
+                                        <span className="col-lg-2">Giới tính:</span>
                                         <span className="col-lg-10">{user.sex}</span>
                                     </div>
                                     <div className="row">
-                                        <span className="col-lg-2">Address:</span>
+                                        <span className="col-lg-2">Địa chỉ:</span>
                                         <span className="col-lg-10">{user.address}</span>
                                     </div>
                                     <div className="row">
-                                        <span className="col-lg-2">Phone:</span>
+                                        <span className="col-lg-2">SĐT:</span>
                                         <span className="col-lg-10">{user.phone}</span>
                                     </div>
                                     <div className="row">
                                         <span className="col-lg-6 btn_func">
                                             <button className="btn_update"
                                                 onClick={openModal}
-                                            >Update User</button>
+                                            >Cập nhật</button>
                                         </span>
                                         <span className="col-lg-6"></span>
 

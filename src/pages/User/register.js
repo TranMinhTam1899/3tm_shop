@@ -115,7 +115,7 @@ const Rigister = (props) => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="login_title">
-                                <h2>create account</h2>
+                                <h2>Tạo tài khoản</h2>
                             </div>
                             <form className="login_form row" onSubmit={submitHandle}>
                                 {
@@ -127,7 +127,7 @@ const Rigister = (props) => {
                                     <input
                                         className="form-control"
                                         type="text"
-                                        placeholder="Username"
+                                        placeholder="Tài khoản"
                                         name="username"
                                         onChange={onChangeRegister}
                                         onBlur={onHandleErrors}
@@ -140,7 +140,7 @@ const Rigister = (props) => {
                                     <input
                                         className="form-control"
                                         type="password"
-                                        placeholder="Password"
+                                        placeholder="Mật khẩu"
                                         name="password"
                                         onChange={onChangeRegister}
                                         onBlur={onHandleErrors}
@@ -153,7 +153,7 @@ const Rigister = (props) => {
                                     <input
                                         className="form-control"
                                         type="text"
-                                        placeholder="Name"
+                                        placeholder="Tên"
                                         name="name"
                                         onChange={onChangeRegister}
                                         onBlur={onHandleErrors}
@@ -166,7 +166,7 @@ const Rigister = (props) => {
                                     <input
                                         className="form-control"
                                         type="text"
-                                        placeholder="Full name"
+                                        placeholder="Tên đầy đủ"
                                         name="fullName"
                                         onChange={onChangeRegister}
                                         onBlur={onHandleErrors}
@@ -204,7 +204,7 @@ const Rigister = (props) => {
                                     <input
                                         className="form-control"
                                         type="text"
-                                        placeholder="Phone"
+                                        placeholder="Điện thoại"
                                         name="phone"
                                         onChange={onChangeRegister}
                                         onBlur={onHandleErrors}
@@ -218,7 +218,7 @@ const Rigister = (props) => {
                                     <input
                                         className="form-control"
                                         type="text"
-                                        placeholder="Address"
+                                        placeholder="Địa chỉ"
                                         name="address"
                                         onChange={onChangeRegister}
                                         onBlur={onHandleErrors}
@@ -233,7 +233,7 @@ const Rigister = (props) => {
                                         value="submit"
                                         className="btn subs_btn form-control"
                                     >
-                                        {loading ? <span className="btn_loading"><i className="fa fa-spinner" aria-hidden="true" ></i> Loading...</span> : <span>Register</span>}
+                                        {loading ? <span className="btn_loading"><i className="fa fa-spinner" aria-hidden="true" ></i> Loading...</span> : <span>Tạo tài khoản</span>}
                                     </button>
                                 </div>
                             </form>

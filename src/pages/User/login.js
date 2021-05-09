@@ -57,7 +57,7 @@ const Login = (props) => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="login_title">
-                                <h2>log in</h2>
+                                <h2>Đăng nhập</h2>
                             </div>
                             <form className="login_form row" onSubmit={submitHandle}>
                                 {
@@ -68,7 +68,7 @@ const Login = (props) => {
                                 <div className="col-lg-12 form-group">
                                     <input className="form-control"
                                         type="text"
-                                        placeholder="User name"
+                                        placeholder="Tài khoản"
                                         name="username"
                                         onChange={(e) => setUsername(e.target.value)}
                                         value={username}
@@ -81,7 +81,7 @@ const Login = (props) => {
                                 <div className="col-lg-12 form-group">
                                     <input className="form-control"
                                         type="password"
-                                        placeholder="Password"
+                                        placeholder="Mật khẩu"
                                         name="password"
                                         onChange={(e) => setPassword(e.target.value)}
                                         value={password}
@@ -92,7 +92,7 @@ const Login = (props) => {
                                 </div>
                                 <div className="col-lg-12 form-group">
                                     <button type="submit" value="submit" className="btn update_btn form-control">
-                                    {loading ? <span className="btn_loading"><i class="fa fa-spinner" aria-hidden="true" ></i> Loading...</span> : <span>Login</span>}
+                                    {loading ? <span className="btn_loading"><i class="fa fa-spinner" aria-hidden="true" ></i> Loading...</span> : <span>Đăng nhập</span>}
                                     </button>
                                 </div>
                             </form>

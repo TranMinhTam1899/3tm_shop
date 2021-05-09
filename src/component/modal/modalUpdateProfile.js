@@ -35,7 +35,7 @@ const ModalUpdateProfile = (props) => {
 
         <Modal isOpen={modal} >
             <ModalHeader>
-                <h5 className="modal-title" id="exampleModalCenterTitle">Update Profile</h5>
+                <h5 className="modal-title" id="exampleModalCenterTitle">Cập nhật thông tin</h5>
                 <button type="button" className="close btnclose__frm">
                     <span aria-hidden="true" onClick={hideModal}>×</span>
                 </button>
@@ -91,7 +91,7 @@ const ModalUpdateProfile = (props) => {
                             id="btn_Update_profile"
                             onClick={onloading}
                         >
-                            {loading ? <span className="btn_loading"><i class="fa fa-spinner" aria-hidden="true" ></i> Loading...</span> : <span>Update</span>}
+                            {loading ? <span className="btn_loading"><i class="fa fa-spinner" aria-hidden="true" ></i> Loading...</span> : <span>Cập nhật</span>}
 
 
                         </button>
